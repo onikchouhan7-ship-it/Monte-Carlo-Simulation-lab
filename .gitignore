@@ -1,0 +1,12 @@
+
+# Compiled programs
+*.exe
+*.out
+
+# Object files
+*.o
+*.obj
+
+# IDE and temporary files
+.vscode/
+*.tmp
