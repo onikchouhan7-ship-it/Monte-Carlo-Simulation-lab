@@ -13,6 +13,15 @@ using namespace chrono;
 int main() {
     int trials;
     long long startN;
+    unsigned int seed;
+
+    cout << "Enter random seed: ";
+    if (!(cin >> seed)) {
+        cerr << "Invalid seed.\n";
+        return 1;
+    }
+
+    setRandomSeed(seed);
 
     cout << "==============================\n";
     cout << "   MONTE CARLO SIMULATION LAB\n";

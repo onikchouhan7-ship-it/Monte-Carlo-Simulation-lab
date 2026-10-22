@@ -1,4 +1,3 @@
-
 #include "simulation.h"
 #include <random>
 #include <chrono>
@@ -6,10 +5,19 @@
 using namespace std;
 using namespace chrono;
 
+static mt19937 generator(random_device{}());
+
+void setRandomSeed(unsigned int seed) {
+    generator.seed(seed);
+}
+
 SimulationResult estimatePi(long long n) {
-    static mt19937 generator(random_device{}());
     uniform_real_distribution<double> distribution(-1.0, 1.0);
-    if (n <= 0) return {n, 0, 0.0, 0.0};
+
+    if (n <= 0) {
+        return {n, 0, 0.0, 0.0};
+    }
+
     long long insideCircle = 0;
 
     auto start = steady_clock::now();
