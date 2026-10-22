@@ -62,6 +62,15 @@ where N is the number of random points used in each trial.
 
 For example, increasing the sample size by 100 times generally reduces the typical error scale by about 10 times. Actual results vary because the points are randomly generated.
 
+## Visual Results
+
+### Accuracy Analysis
+
+![Accuracy Comparison](accuracy_comparison.png)
+
+### Performance Analysis
+
+![Performance Plot](performance_plot.png)
 
 ## Tech Stack
 
