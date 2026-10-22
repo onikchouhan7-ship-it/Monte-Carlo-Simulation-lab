@@ -63,7 +63,7 @@ int main() {
         for (int k = 0; k < level; k++) {
             n *= 10;
         }
-
+        estimatePi(n);
         double sumEstimates = 0.0;
         double sumAbsoluteErrors = 0.0;
         double sumTime = 0.0;
