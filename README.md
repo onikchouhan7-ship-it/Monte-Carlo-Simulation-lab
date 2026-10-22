@@ -62,6 +62,24 @@ where N is the number of random points used in each trial.
 
 For example, increasing the sample size by 100 times generally reduces the typical error scale by about 10 times. Actual results vary because the points are randomly generated.
 
+## Experimental Results
+
+The simulation was tested with 20 trials for each sample size.
+
+| Points per trial | Mean π estimate | Mean absolute error |
+|-----------------:|----------------:|--------------------:|
+|       1,000      |    3.11160000   |     0.05127780      |
+|       10,000     |    3.14528000   |     0.01492220      |
+|       100,000    |    3.14266600   |     0.00349620      |
+|       1,000,000  |    3.14182160   |     0.00103800      |
+
+### Key Observations
+
+- **Improved accuracy:** The mean absolute error decreased as the number of random points increased.
+- **Convergence toward π:** The mean estimate approached the actual value of π (approximately 3.14159265).
+- **Statistical behaviour:** The results illustrate how Monte Carlo estimation generally becomes more accurate with larger sample sizes, although individual runs can vary.
+
+*Note: These are results from one experimental run. Execution time and throughput depend on the hardware and system load.*
 ## Visual Results
 
 ### Accuracy Analysis
